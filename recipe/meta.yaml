@@ -1,5 +1,5 @@
 {% set name = "BELT" %}
-{% set version = "1.2" %}
+{% set version = "1.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://github.com/qianglbl/{{ name }}/archive/refs/tags/{{ name }}v{{ version }}.tar.gz
-  sha256: a2a62a4a2f7bd3982466dc263fcfdbbdee41429081ac684e3f43a489e33af739
+  sha256: ef2149ac9447ad9f1d11e17606b844258c1940a173597399801bbb9b273f96e1
 
 build:
   number: 0
   skip: true  # [win]
   skip: true  # [osx]
-  script: 
+  script:
     - cd src
     - make CC=$GFORTRAN LINK=$GFORTRAN
     - mkdir -p $PREFIX/bin
@@ -33,16 +33,16 @@ about:
   home: https://github.com/qianglbl/BELT
   summary: 'BELT: BEam Longitudinal Tracking (forward or backward)'
   description: |
-              This is a serial/parallel code for fast electron beam longitudinal 
-              forward or backward tracking through an electron linear accelerator. 
-              It includes longitudinal space-charge effect, structure and 
-              resistive wall wakefields, longitudinal coherent synchrotron 
-              radiation effect.
-              Copyright Notice
-              BEam Longitudinal Tracking (BELT) Copyright (c) 2024, 
-              The Regents of the University of California, 
-              through Lawrence Berkeley National Laboratory (subject to receipt of 
-              any required approvals from the U.S. Dept. of Ener gy). All rights reserved.
+    This is a serial/parallel code for fast electron beam longitudinal 
+    forward or backward tracking through an electron linear accelerator. 
+    It includes longitudinal space-charge effect, structure and 
+    resistive wall wakefields, longitudinal coherent synchrotron 
+    radiation effect.
+    Copyright Notice
+    BEam Longitudinal Tracking (BELT) Copyright (c) 2024, 
+    The Regents of the University of California, 
+    through Lawrence Berkeley National Laboratory (subject to receipt of 
+    any required approvals from the U.S. Dept. of Ener gy). All rights reserved.
   license: BSD-3-Clause-LBNL
   license_family: BSD
   license_file: license.txt
