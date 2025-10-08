@@ -1,5 +1,5 @@
 {% set name = "BELT" %}
-{% set version = "1.4" %}
+{% set version = "1.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/qianglbl/{{ name }}/archive/refs/tags/{{ name }}v{{ version }}.tar.gz
-  sha256: ef2149ac9447ad9f1d11e17606b844258c1940a173597399801bbb9b273f96e1
+  sha256: 4a35004f091face963c7f9f817b11be4aa4a5bf2c2ee95b50605474c1464283b
 
 build:
   number: 0
