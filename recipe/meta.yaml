@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/qianglbl/{{ name }}/archive/refs/tags/{{ name }}v{{ version }}.tar.gz
-  sha256: eb82e7bc2bcd7a38d03bb927c2bda8bc1aa1a78d10862656e5ba739bd77d30e4
+  sha256: c0323ab3f37158b3d89d99dc4b230c54be056b0581f5a0eb34084dca33af5d54
 
 build:
   number: 0
